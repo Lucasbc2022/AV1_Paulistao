@@ -1,0 +1,114 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>br.edu.curso.fateczl</groupId>
+  <artifactId>AV1_Futebol</artifactId>
+  <version>0.1</version>
+  <packaging>war</packaging>
+  <name>AV1_Futebol</name>
+  <description>AV1_Futebol</description>
+      <properties>
+	 <java.version>11</java.version>
+	 <maven.compiler.source>${java.version}</maven.compiler.source>
+	 <maven.compiler.target>${java.version}</maven.compiler.target>
+  </properties>
+    <build>
+	 <plugins>
+		
+	<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-war-plugin</artifactId>
+		<version>3.3.2</version>
+	</plugin>
+	<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-site-plugin</artifactId>
+		<version>3.12.1</version>
+	</plugin>
+	<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-project-info-reports-plugin</artifactId>
+		<version>3.1.2</version>
+	</plugin>
+	  
+	 </plugins>
+  </build>
+  
+  
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>4.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.servlet.jsp/javax.servlet.jsp-api -->
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>javax.servlet.jsp-api</artifactId>
+			<version>2.3.3</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api -->
+		<!-- https://mvnrepository.com/artifact/org.glassfish.web/jakarta.servlet.jsp.jstl -->
+
+		<!-- https://mvnrepository.com/artifact/net.sourceforge.jtds/jtds -->
+		<dependency>
+			<groupId>net.sourceforge.jtds</groupId>
+			<artifactId>jtds</artifactId>
+			<version>1.3.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.26</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.taglibs/taglibs-standard-impl -->
+        <dependency>
+    <groupId>org.apache.taglibs</groupId>
+    <artifactId>taglibs-standard-impl</artifactId>
+    <version>1.2.5</version>
+    <scope>runtime</scope>
+       </dependency>
+       
+       <!-- https://mvnrepository.com/artifact/org.apache.taglibs/taglibs-standard-spec -->
+<dependency>
+    <groupId>org.apache.taglibs</groupId>
+    <artifactId>taglibs-standard-spec</artifactId>
+    <version>1.2.5</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.taglibs/taglibs-standard-jstlel -->
+<dependency>
+    <groupId>org.apache.taglibs</groupId>
+    <artifactId>taglibs-standard-jstlel</artifactId>
+    <version>1.2.5</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.taglibs/taglibs-standard-compat -->
+<dependency>
+    <groupId>org.apache.taglibs</groupId>
+    <artifactId>taglibs-standard-compat</artifactId>
+    <version>1.2.5</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/xalan/xalan -->
+<dependency>
+    <groupId>xalan</groupId>
+    <artifactId>xalan</artifactId>
+    <version>2.7.2</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/xalan/serializer -->
+<dependency>
+    <groupId>xalan</groupId>
+    <artifactId>serializer</artifactId>
+    <version>2.7.1</version>
+</dependency>
+
+
+
+  </dependencies>
+</project>
